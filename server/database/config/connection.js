@@ -1,17 +1,15 @@
-const { Pool } = require('pg'); 
-require('env2')('./config.env')
+const { Pool } = require('pg');
+require('env2')('./config.env');
 
-const { DATABASE_URL } = process.env
+const { DEV_DB_URL } = process.env;
 
-if(!DATABASE_URL){
- throw new Error('link db not found >>');
+if (!DEV_DB_URL) {
+  throw new Error('link db not found >>');
 }
 
 const options = {
-    connectionString: DATABASE_URL,
-    ssl: true
-}
-
-console.log(options);
+  connectionString: DEV_DB_URL,
+  ssl: false,
+};
 
 module.exports = new Pool(options);
