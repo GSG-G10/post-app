@@ -7,7 +7,6 @@ router.get("/", (req, res) => {
   res.send("home page")
 });
 
-
 router.get("/getusers", (req, res) => {
     getData()
     .then(data=>{
@@ -17,7 +16,6 @@ router.get("/getusers", (req, res) => {
       res.status(500).json({msg:'Internal server error' }) 
     })
 });
-
 
 router.post("/add-post", (req, res) => {
   console.log(req.body);6
@@ -35,8 +33,6 @@ router.get("/add-post", (req, res) => {
  res.redirect('/')
 });
 
-
 router.post("/info-post", (req, res) => {})
-
 
 module.exports = router;

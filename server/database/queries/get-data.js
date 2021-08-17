@@ -1,4 +1,4 @@
-const connection = require("../config/connection.js");
+const connection = require('../config/connection');
 
 const getData = () => {
     return connection.query("SELECT * FROM posts;")
