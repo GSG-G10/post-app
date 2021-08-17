@@ -1,0 +1,83 @@
+
+header{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.253);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 30px;
+}
+
+
+.bowl_add_post{
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 25%;
+box-shadow: 0 1px 5px rgba(0, 0, 0, 0.466);
+border-radius: 4px;
+padding:2px 4px;
+cursor: pointer;
+}
+
+.bowl_add_post input{
+    width: 70%;
+outline: none;
+border: none;
+user-select: none;
+cursor: pointer;
+}
+
+.bowl_add_post img{
+    width: 45px;
+    height:45px;
+    border-radius: 50%;
+}
+
+.bowl_add_post svg{
+    width: 35px;
+    height:35px;
+}
+.logo{
+    font-size: 1.5rem;
+}
+
+.dark_mode{
+
+}
+
+.dark_mode svg{
+    width: 40px;
+    height:40px;
+}
+
+.cancel{
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    background: firebrick;
+    border-radius: 50%;
+    padding: 2px;
+cursor: pointer;
+width: 30px;
+fill: rgb(194, 194, 194);
+height: 30px;
+}
+
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+.card_post{
+    width: 300px;
+    height: 200px;
+}
+img{
+    width: 300px;
+    height: 200px;
+}
