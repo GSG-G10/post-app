@@ -20,8 +20,11 @@ post_id VARCHAR(100) NOT NULL);
 
 INSERT INTO users (username, fname) VALUES ('divluffy', 'ibrahim jomaa');
 INSERT INTO users (username, fname) VALUES ('sabbah', 'ahmad sabah');
-INSERT INTO posts (user_id, text, link_img, likes) VALUES (22 , 'this is text default about  this image', '/database/storage/0.jpg' , 50);
+INSERT INTO users (username, fname) VALUES ('mostafa', 'mostafa mnoon');
+INSERT INTO users (username, fname) VALUES ('ahmed', 'ahmad qadura');
+INSERT INTO posts (user_id, text, link_img, likes) VALUES (22 , 'this is text default about  this image', '../storage/0.jpg' , 540);
 INSERT INTO profile (post_id) VALUES (1);
+
 
 -- SELECT * FROM users;
 -- SELECT * FROM posts;
